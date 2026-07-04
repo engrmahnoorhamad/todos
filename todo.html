@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todostyle.css">
+    <title>Todo App</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">TaskFlow</a>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>]
+    </nav>
+
+    <main class="app-container">
+        <h1>Todo App</h1>
+        <form onsubmit="return false;" id="todo-form">
+            <input type="hidden" id="edit-todo-id" value="">
+            
+            <input type="text" name="todo" id="todo" placeholder="Enter todo title">
+            
+            <button type="submit" onclick="addTodo()" id="form-submission-btn">
+                Add Todo
+            </button>
+            <button type="submit" onclick="updateTodo()" id="update-todo-btn" class="hide-element">
+                Update Todo
+            </button>
+        </form>
+        
+        <div id="todos"></div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 TaskFlow Inc. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Help</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="todo.js"></script>
+</body>
+</html>
